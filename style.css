@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Madimi+One&family=Varela+Round&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: white;
+    background:radial-gradient(#656464, #5259a3);
+}
+nav{
+    background: radial-gradient(rgba(255, 255, 255, 0.785),#5259a300);
+    border-color: solid black;
+    color: rgb(8, 8, 8);
+    height: 40px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    padding:0 10px 0;
+    font-family: "Anta", sans-serif;
+}
+nav ul{
+    list-style-type: none;
+}
+.container1{
+    background:radial-gradient(#535252dc, #5259a3);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container2{
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: "Anta", sans-serif;
+    position: relative;
+}
+.box{
+    justify-content: center;
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+.box:hover{
+    background-color: rgba(37, 36, 36, 0.055);
+}
+
+.info{
+    padding:0 34px;
+    font-family: "Anta" , sans-serif;
+    color: rgb(8,8,8);
+
+}
+.info h1{
+    font-size: 2rem;
+ }
+.info img{
+    width:100px;
+    padding-left:10px;
+    
+}
+
+.img img{
+    width:0px;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+
+#reset{
+    margin-top: 10px;
+    margin-left: 42px;
+    padding: 6px 14px;
+    background: radial-gradient(rgba(255, 255, 255, 0.785),#5259a300);
+    border-radius: 6px;
+    border-color: 2px solid black ;
+    cursor: pointer;
+    font-family: "Anta", sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+@media screen and (max-width:800px){
+    .container1{
+        flex-wrap: wrap;
+    }
+    .info{
+        margin-top: 34px;
+    }
+    .info h1{
+       font-size: 2rem;
+    }
+    .container2{    
+        grid-template-rows: repeat(3,20vw);
+        grid-template-columns: repeat(3,20vw);
+    }
+    nav li{
+        padding:0 10px;
+        font-size: 1rem;
+        height: 40px;
+    }
+}
